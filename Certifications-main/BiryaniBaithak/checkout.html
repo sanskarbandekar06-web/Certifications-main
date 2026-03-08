@@ -1,0 +1,230 @@
+<!-- Biryani Baithak - Checkout (Deep Dark) -->
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Checkout | Biryani Baithak</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6a00",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#121212",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }</script>
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+    <div class="relative flex h-auto min-screen w-full flex-col overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- Navigation -->
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-6 py-4 md:px-20 lg:px-40 bg-background-light dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+                <div class="flex items-center gap-4">
+                    <a href="index.html" class="flex items-center gap-4 text-inherit no-underline">
+                        <div class="size-8 text-primary">
+                            <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-slate-900 dark:text-slate-100 text-xl font-black leading-tight tracking-tight">
+                            Biryani Baithak</h2>
+                    </a>
+                </div>
+                <div class="flex flex-1 justify-end gap-8">
+                    <div class="hidden md:flex items-center gap-9">
+                        <a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors"
+                            href="menu.html">Menu</a>
+                        <a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors"
+                            href="#">Offers</a>
+                        <a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors"
+                            href="contact.html">Support</a>
+                    </div>
+                    <a href="checkout.html"
+                        class="flex items-center justify-center rounded-lg h-10 w-10 bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all">
+                        <span class="material-symbols-outlined">shopping_cart</span>
+                    </a>
+                </div>
+            </header>
+            <main class="flex flex-1 justify-center py-10 px-4 md:px-10 lg:px-40">
+                <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+                    <div class="flex flex-col gap-2 mb-8">
+                        <h1 class="text-slate-900 dark:text-slate-100 text-4xl font-black leading-tight tracking-tight">
+                            Review Your Royal Order</h1>
+                        <p class="text-slate-600 dark:text-primary/70 text-lg font-medium">Authentic Hyderabadi flavors
+                            await you.</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <!-- Form Section -->
+                        <div class="lg:col-span-2 flex flex-col gap-8">
+                            <!-- Delivery Details -->
+                            <section
+                                class="bg-white rounded-xl p-6 border border-primary/10 shadow-sm dark:bg-[#1a1a1a]">
+                                <div class="flex items-center gap-3 mb-6">
+                                    <span class="material-symbols-outlined text-primary">local_shipping</span>
+                                    <h2 class="text-xl font-bold">Delivery Address</h2>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div class="flex flex-col gap-1 md:col-span-2">
+                                        <label class="text-sm font-semibold text-slate-500">Street Address</label>
+                                        <input
+                                            class="border border-primary/20 rounded-lg p-3 focus:ring-primary focus:border-primary text-slate-100 dark:bg-black/20 dark:border-slate-700"
+                                            placeholder="House No, Street Name" type="text" />
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <label class="text-sm font-semibold text-slate-500">City</label>
+                                        <input
+                                            class="border border-primary/20 rounded-lg p-3 focus:ring-primary focus:border-primary text-slate-100 dark:bg-black/20 dark:border-slate-700"
+                                            placeholder="Hyderabad" type="text" />
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <label class="text-sm font-semibold text-slate-500">PIN Code</label>
+                                        <input
+                                            class="border border-primary/20 rounded-lg p-3 focus:ring-primary focus:border-primary text-slate-100 dark:bg-black/20 dark:border-slate-700"
+                                            placeholder="500001" type="text" />
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Payment Method -->
+                            <section
+                                class="bg-white rounded-xl p-6 border border-primary/10 shadow-sm dark:bg-[#1a1a1a]">
+                                <div class="flex items-center gap-3 mb-6">
+                                    <span class="material-symbols-outlined text-primary">account_balance_wallet</span>
+                                    <h2 class="text-xl font-bold">Payment Method</h2>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                    <label class="cursor-pointer">
+                                        <input checked="" class="hidden peer" name="payment" type="radio" />
+                                        <div
+                                            class="flex flex-col items-center gap-2 p-4 border border-primary/20 rounded-xl peer-checked:border-primary peer-checked:bg-primary/10 transition-all">
+                                            <span class="material-symbols-outlined text-3xl">credit_card</span>
+                                            <span class="text-sm font-medium">Card</span>
+                                        </div>
+                                    </label>
+                                    <label class="cursor-pointer">
+                                        <input class="hidden peer" name="payment" type="radio" />
+                                        <div
+                                            class="flex flex-col items-center gap-2 p-4 border border-primary/20 rounded-xl peer-checked:border-primary peer-checked:bg-primary/10 transition-all">
+                                            <span class="material-symbols-outlined text-3xl">payments</span>
+                                            <span class="text-sm font-medium">UPI</span>
+                                        </div>
+                                    </label>
+                                    <label class="cursor-pointer">
+                                        <input class="hidden peer" name="payment" type="radio" />
+                                        <div
+                                            class="flex flex-col items-center gap-2 p-4 border border-primary/20 rounded-xl peer-checked:border-primary peer-checked:bg-primary/10 transition-all">
+                                            <span class="material-symbols-outlined text-3xl">handshake</span>
+                                            <span class="text-sm font-medium">COD</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- Cart Overview Section -->
+                        <div class="flex flex-col gap-6">
+                            <div
+                                class="bg-white rounded-xl p-6 border border-primary/20 shadow-xl sticky top-24 dark:bg-[#1a1a1a]">
+                                <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+                                    <span class="material-symbols-outlined">receipt_long</span>
+                                    Cart Summary
+                                </h2>
+                                <div class="flex flex-col gap-6 mb-8">
+                                    <div class="flex gap-4">
+                                        <div class="size-20 bg-center bg-no-repeat bg-cover rounded-lg shrink-0"
+                                            data-alt="Traditional Hyderabadi Mutton Biryani with spices"
+                                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVMmzxTW-Zed9cyEuiWceMdNoLkxikI1FW27qD8utah9HG9jJ63_hORKt3DH8k9qCxFGtCISSH01_SVRZ8rbmJaL3HTk0mOk7UabijX1RJnRfYRGCyfMMkrJDvAV-FG-VZVoxs421TaFt7-6Npe1CazdFGcdhitvKRPjrUFwU50eikayqpau57eUzSdXaLeICMgB5IghnUsBuemL6eqGVyuh7UrLKturp14NH6bxadw0QYDsZBLtbQfwmhY8KtrvVJanPyxe8hEw');">
+                                        </div>
+                                        <div class="flex flex-col justify-center">
+                                            <p class="font-bold text-slate-100">Mutton Biryani</p>
+                                            <p class="text-sm text-slate-400">Qty: 1 • Extra Raita</p>
+                                            <p class="text-primary font-bold mt-1">₹450</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-4">
+                                        <div class="size-20 bg-center bg-no-repeat bg-cover rounded-lg shrink-0"
+                                            data-alt="Aromatic Chicken Biryani bowl"
+                                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-wnF55BULAGtgIOl9BHm9kTX6WbIUuRGY7hAhqgmbZi5ESlq66R48bx35z4Iipx65oBkkMaO9h9OD94JdVFTZQQESwawfpV9DDE3YrOOgjEPk5YHnwo6kVSr2UffwA_OblWGbroLLGED2mtqwQtyRWZ08X_CAO4AK4Q6XCg7QIbxoyGiTWBIW5F-DxHRmDJtSvwaTWQx1Z6-OJLMIqgEew0mZsTXy6YruAcW86owmKsgB6DLMPqDKzIBB3w0VrCTnjosScGhBcA');">
+                                        </div>
+                                        <div class="flex flex-col justify-center">
+                                            <p class="font-bold text-slate-100">Chicken Biryani</p>
+                                            <p class="text-sm text-slate-400">Qty: 2 • Double Masala</p>
+                                            <p class="text-primary font-bold mt-1">₹780</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-t border-primary/20 pt-6 flex flex-col gap-3">
+                                    <div class="flex justify-between text-sm text-slate-400">
+                                        <span>Subtotal</span>
+                                        <span>₹1,230</span>
+                                    </div>
+                                    <div class="flex justify-between text-sm text-slate-400">
+                                        <span>Delivery Fee</span>
+                                        <span>₹45</span>
+                                    </div>
+                                    <div class="flex justify-between text-lg font-black text-slate-100 pt-2">
+                                        <span>Total Amount</span>
+                                        <span class="text-primary">₹1,275</span>
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl mt-8 flex items-center justify-center gap-2 transition-transform active:scale-95 shadow-lg shadow-primary/20">
+                                    <span class="material-symbols-outlined">restaurant_menu</span>
+                                    Place Royal Order
+                                </button>
+                                <p
+                                    class="text-center text-[10px] uppercase tracking-widest text-primary/40 mt-4 font-bold">
+                                    Secure Checkout by Baithak Pay</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- Footer -->
+            <footer
+                class="mt-auto border-t border-primary/10 py-10 px-6 md:px-40 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary">workspace_premium</span>
+                    <span class="text-sm font-medium">The King of Biryanis since 1994</span>
+                </div>
+                <div class="flex gap-6 text-xs uppercase font-bold tracking-widest">
+                    <a class="hover:text-primary" href="#">Privacy</a>
+                    <a class="hover:text-primary" href="#">Terms</a>
+                    <a class="hover:text-primary" href="#">Location</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
