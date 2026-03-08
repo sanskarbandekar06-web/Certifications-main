@@ -1,0 +1,381 @@
+<!-- Biryani Baithak - Menu (Deep Dark) -->
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6a00",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#121212",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <title>Biryani Baithak - Elegant Menu</title>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- Navigation Bar -->
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-primary/20 px-4 md:px-10 py-3 bg-background-light dark:bg-background-dark sticky top-0 z-50">
+                <div class="flex items-center gap-4">
+                    <div class="size-8 flex items-center justify-center text-primary">
+                        <span class="material-symbols-outlined text-3xl">restaurant</span>
+                    </div>
+                    <h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">
+                        <a href="index.html">Biryani Baithak</a></h2>
+                </div>
+                <div class="flex flex-1 justify-end gap-4 md:gap-8">
+                    <label class="hidden md:flex flex-col min-w-40 h-10 max-w-64">
+                        <div class="flex w-full flex-1 items-stretch rounded-lg h-full overflow-hidden">
+                            <div
+                                class="text-slate-500 dark:text-slate-400 flex border-none bg-slate-100 dark:bg-primary/10 items-center justify-center pl-4">
+                                <span class="material-symbols-outlined">search</span>
+                            </div>
+                            <input
+                                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-slate-900 dark:text-slate-100 focus:outline-0 focus:ring-0 border-none bg-slate-100 dark:bg-primary/10 placeholder:text-slate-500 dark:placeholder:text-slate-400 px-4 pl-2 text-base font-normal"
+                                placeholder="Search menu..." value="" />
+                        </div>
+                    </label>
+                    <a href="checkout.html"
+                        class="flex items-center justify-center rounded-lg h-10 w-10 md:w-auto md:px-4 bg-slate-100 dark:bg-primary/10 text-slate-900 dark:text-slate-100 hover:bg-primary/20 transition-colors">
+                        <span class="material-symbols-outlined">shopping_cart</span>
+                    </a>
+                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary"
+                        data-alt="User profile avatar"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAdUNWlD1S2qA6tjG4OitE0Rw-oali-ONID23xpXRWnWh4NsLBC_0BFjq9OKgx_oKx85srN-lDsKKIB1tR8EnR_SqOco-Wv508PUc9YZXYjE6uX8n696ZY7F-_iTQoHeV3vrUb03hWOYF_tiWP8LuUYl1gSewj4vtrL2j1Lum9d2w47lI2Zh2ZeJyzv4FkZOP00AwQFC5tPklYWTSUxQVA07F8MY3jkac5yVcriwF94E48oOBwBP0gCe9QjPiXRG_BOKfR-NnxmtQ");'>
+                    </div>
+                </div>
+            </header>
+            <main class="flex-1 max-w-[1200px] mx-auto w-full px-4 py-6">
+                <!-- Hero Section -->
+                <div class="@container mb-8">
+                    <div class="bg-cover bg-center flex flex-col justify-end overflow-hidden rounded-xl min-h-[300px] md:min-h-[400px] relative"
+                        data-alt="Rich aromatic biryani served in a traditional handi"
+                        style='background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(18, 18, 18, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDL5QZGBaUejhoZye678dWI6YZfWdNKuW4D21YoKskooVcyKB4AJmv9-oYyXkCBLnyYIRuwxWOlzZsW1jp7JKTTmq0PK6EZjTmvBkT5LeqgWMA104lPAdramJ5Y_ewPz8hpPp62us6iBiYsorUyNNbYXKKIpi7u_tR09SDtdj1hPh23qe2ZVneSptZegDtSg5qlgHqYBTwEfW8ym2G0MPwpS8CJIdr427scoImHs6K_oR58pql3b6qnn_zGlj7TtvPXwhFyzwe8aw");'>
+                        <div class="flex flex-col p-6 md:p-10 gap-2">
+                            <span class="text-primary font-bold tracking-widest uppercase text-sm">Authentic
+                                Flavors</span>
+                            <h1 class="text-white text-4xl md:text-5xl font-bold leading-tight">Royal Biryani Baithak
+                            </h1>
+                            <p class="text-slate-300 max-w-2xl">Experience the legacy of the Nawabs with our
+                                slow-cooked, aromatic rice delicacies and traditional recipes passed down through
+                                generations.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navigation Categories -->
+                <div class="sticky top-[64px] bg-background-light dark:bg-background-dark z-40 pb-4">
+                    <div
+                        class="flex border-b border-slate-200 dark:border-primary/20 gap-4 md:gap-8 overflow-x-auto no-scrollbar whitespace-nowrap">
+                        <a class="flex flex-col items-center justify-center border-b-[3px] border-primary text-primary pb-[13px] pt-4 px-2"
+                            href="#biryanis">
+                            <p class="text-sm font-bold leading-normal tracking-[0.015em]">Royal Biryanis</p>
+                        </a>
+                        <a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-slate-500 dark:text-slate-400 hover:text-primary transition-colors pb-[13px] pt-4 px-2"
+                            href="#appetizers">
+                            <p class="text-sm font-bold leading-normal tracking-[0.015em]">Exquisite Appetizers</p>
+                        </a>
+                        <a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-slate-500 dark:text-slate-400 hover:text-primary transition-colors pb-[13px] pt-4 px-2"
+                            href="#desserts">
+                            <p class="text-sm font-bold leading-normal tracking-[0.015em]">Nawab's Desserts</p>
+                        </a>
+                        <a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-slate-500 dark:text-slate-400 hover:text-primary transition-colors pb-[13px] pt-4 px-2"
+                            href="#drinks">
+                            <p class="text-sm font-bold leading-normal tracking-[0.015em]">Refreshing Drinks</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- Menu Sections -->
+                <div class="space-y-12 py-8">
+                    <!-- Biryanis Section -->
+                    <section id="biryanis">
+                        <div class="flex items-center gap-3 mb-6">
+                            <h2
+                                class="text-slate-900 dark:text-slate-100 text-[28px] font-bold leading-tight tracking-[-0.015em]">
+                                Royal Biryanis</h2>
+                            <div class="h-px flex-1 bg-primary/20"></div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Biryani Item 1 -->
+                            <div
+                                class="flex flex-col @[400px]:flex-row overflow-hidden rounded-xl bg-slate-100 dark:bg-primary/5 border border-slate-200 dark:border-primary/10 hover:border-primary/40 transition-all group">
+                                <div class="w-full @[400px]:w-48 h-48 @[400px]:h-auto shrink-0 bg-center bg-cover"
+                                    data-alt="Mutton Dum Biryani with caramelized onions"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCqAwtXJsW1nQq_7htvLgJiK9WAiVCr-kUtnLKWRcm4UysCX0Il0JC8aoLy9TLvzOtkm0mqVL_Rn8w1a1WoGQsj24PcoQWUIB0lVCBbdpieMgYrusOsCv6KKaTA1ooRzv9RuwgYVZGiOJJ9GQ2ObvyHses2BO2Q9uFq71CFr8nt2DOE9ppNOshbKBUvuUZITTSCDjDL70IwythFpD1Wlv231T4eEpikLAq9rIWMRwu7eNpvPROAj4YeaX3C5D2IT7OOzpBVk5n9PA");'>
+                                </div>
+                                <div class="flex flex-col flex-1 p-5 justify-between">
+                                    <div>
+                                        <div class="flex justify-between items-start mb-1">
+                                            <h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold">Shahi
+                                                Mutton Biryani</h3>
+                                            <span class="text-primary font-bold">₹450</span>
+                                        </div>
+                                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Tender
+                                            mutton slow-cooked with long-grain basmati rice, saffron, and our secret
+                                            24-spice blend.</p>
+                                    </div>
+                                    <button
+                                        class="mt-4 flex items-center justify-center gap-2 rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:bg-orange-600 transition-colors w-full @[400px]:w-auto @[400px]:self-end">
+                                        <span class="material-symbols-outlined text-lg">add_shopping_cart</span>
+                                        Add to Order
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Biryani Item 2 -->
+                            <div
+                                class="flex flex-col @[400px]:flex-row overflow-hidden rounded-xl bg-slate-100 dark:bg-primary/5 border border-slate-200 dark:border-primary/10 hover:border-primary/40 transition-all group">
+                                <div class="w-full @[400px]:w-48 h-48 @[400px]:h-auto shrink-0 bg-center bg-cover"
+                                    data-alt="Chicken Dum Biryani with fresh herbs"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA9YIlZOhKA0DBsCdwJkm3e_8AlzG7a2HQWIfiVyd5tfkD8Zo-3WKxcytP3Frn3sdUGvSqjEiugUbyR1JErAIYCCXTYalJK_VvhEU6u36tzSfY4lIBqyAbITMeV3jUKHxMFWsmXovpIM3a8jBRZ-inN8Pd-Lhm1yo9FFnV9Sn6QFPraAH92ujI0wxU1OCLk9V2ykCXxmlwUsb9PSQCkeKhixEeSQ6HTQ9adiFUeh_1qLfvn8MYXrUzilz7b04eaCTOcUNtaLlquRg");'>
+                                </div>
+                                <div class="flex flex-col flex-1 p-5 justify-between">
+                                    <div>
+                                        <div class="flex justify-between items-start mb-1">
+                                            <h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold">Hyderabadi
+                                                Chicken Biryani</h3>
+                                            <span class="text-primary font-bold">₹380</span>
+                                        </div>
+                                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Authentic
+                                            'Kacchi Yakhni' style chicken biryani with spicy masala and fragrant rice.
+                                        </p>
+                                    </div>
+                                    <button
+                                        class="mt-4 flex items-center justify-center gap-2 rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:bg-orange-600 transition-colors w-full @[400px]:w-auto @[400px]:self-end">
+                                        <span class="material-symbols-outlined text-lg">add_shopping_cart</span>
+                                        Add to Order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Appetizers Section -->
+                    <section id="appetizers">
+                        <div class="flex items-center gap-3 mb-6">
+                            <h2
+                                class="text-slate-900 dark:text-slate-100 text-[28px] font-bold leading-tight tracking-[-0.015em]">
+                                Exquisite Appetizers</h2>
+                            <div class="h-px flex-1 bg-primary/20"></div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- App Item 1 -->
+                            <div
+                                class="flex flex-col rounded-xl overflow-hidden bg-slate-100 dark:bg-primary/5 border border-slate-200 dark:border-primary/10">
+                                <div class="h-48 bg-center bg-cover" data-alt="Platter of spicy chicken tikka"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAk37_0jQLXi1HU_AnfVyuZVU_I2MqUmCPJFFu3d3wnp2E-axFhEncit-b8yDpcc6EzA0sWF7XbiDGj0_dauxBFSR-I0mq_GpFSHpzS0lWRqmXkOHpk8yrB3ijnnDArz7cNrEBl24avsnHNO6A0Jg28fGSb2F7LjtqYZxUFuxfOOthyjwYv0Xo1rAjcbcjn6nn48m9xRA6HWB_Q_zXLALhKPb6agzTGHuVqi5MQuCZlURzxkHd2FgHUXNRKLZSQNraRZWUco7_l1g");'>
+                                </div>
+                                <div class="p-5 flex flex-col justify-between flex-1">
+                                    <div>
+                                        <div class="flex justify-between mb-2">
+                                            <h3 class="font-bold text-slate-900 dark:text-slate-100">Galouti Kebab</h3>
+                                            <span class="text-primary font-bold">₹320</span>
+                                        </div>
+                                        <p class="text-xs text-slate-600 dark:text-slate-400">Melt-in-your-mouth minced
+                                            mutton kebabs, a specialty of Lucknow.</p>
+                                    </div>
+                                    <button
+                                        class="mt-4 flex items-center justify-center gap-2 rounded-lg h-9 bg-primary/10 text-primary text-xs font-bold hover:bg-primary hover:text-white transition-all">
+                                        <span class="material-symbols-outlined text-sm">add</span> Add
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- App Item 2 -->
+                            <div
+                                class="flex flex-col rounded-xl overflow-hidden bg-slate-100 dark:bg-primary/5 border border-slate-200 dark:border-primary/10">
+                                <div class="h-48 bg-center bg-cover" data-alt="Tandoori paneer tikka with mint chutney"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHGja0zW5eNMVKZ5hkF_SgBNjqgJqoDc5_-rDqzWDqbfELCdU3Ssdu6OdUEWa8NSVLJ9rFz4wf8SIlv_5GPPIbc1OhjWwGbMFs7CbxzdlAbSgdA4r6HzgUyJbcnR3Jmzs7aitYFb6urgQcP6TT8yBsk35z72L4jOFU3uvB_HWaqI92ghVele54af1AcJXOIwiJyuWnt46A_Rx6MLscON1RmAs-eq8BJelvw2B9oWPDmBBavOUGZiYn_zJHyvftVILQL1i0AedhmA");'>
+                                </div>
+                                <div class="p-5 flex flex-col justify-between flex-1">
+                                    <div>
+                                        <div class="flex justify-between mb-2">
+                                            <h3 class="font-bold text-slate-900 dark:text-slate-100">Paneer Tikka Angara
+                                            </h3>
+                                            <span class="text-primary font-bold">₹280</span>
+                                        </div>
+                                        <p class="text-xs text-slate-600 dark:text-slate-400">Smoky cottage cheese cubes
+                                            marinated in spicy yogurt and grilled in a clay oven.</p>
+                                    </div>
+                                    <button
+                                        class="mt-4 flex items-center justify-center gap-2 rounded-lg h-9 bg-primary/10 text-primary text-xs font-bold hover:bg-primary hover:text-white transition-all">
+                                        <span class="material-symbols-outlined text-sm">add</span> Add
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- App Item 3 -->
+                            <div
+                                class="flex flex-col rounded-xl overflow-hidden bg-slate-100 dark:bg-primary/5 border border-slate-200 dark:border-primary/10">
+                                <div class="h-48 bg-center bg-cover" data-alt="Golden fried fish appetizers"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC2-m_1zSId86hR_-k9AbrnuL5_GW7lUojGKWSWKEzfYhuLQWq1zP5dJ7HwpFU8m3ZLdCy3vKaC1By-D3LMiUiDHIS7O88GSdkaAZLh-8caQI44pKwYUB1h5mAEpbtq_UkKdCqMHQOZKB_xAoHUpzgMj89mEBY0stN7NdpD5OU-mCsCdOhEXz_Omw3mhvKKjyooGIoIuZckKDC6p5Y81RzLMVvEUMQTV-c7-M55J2xhkBa58mqU1KfN3eaWHPgTTuHjN6YPCR0Epg");'>
+                                </div>
+                                <div class="p-5 flex flex-col justify-between flex-1">
+                                    <div>
+                                        <div class="flex justify-between mb-2">
+                                            <h3 class="font-bold text-slate-900 dark:text-slate-100">Amritsari Fish Fry
+                                            </h3>
+                                            <span class="text-primary font-bold">₹350</span>
+                                        </div>
+                                        <p class="text-xs text-slate-600 dark:text-slate-400">Crispy batter-fried fish
+                                            fillets seasoned with carom seeds and chaat masala.</p>
+                                    </div>
+                                    <button
+                                        class="mt-4 flex items-center justify-center gap-2 rounded-lg h-9 bg-primary/10 text-primary text-xs font-bold hover:bg-primary hover:text-white transition-all">
+                                        <span class="material-symbols-outlined text-sm">add</span> Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Desserts Section -->
+                    <section id="desserts">
+                        <div class="flex items-center gap-3 mb-6">
+                            <h2
+                                class="text-slate-900 dark:text-slate-100 text-[28px] font-bold leading-tight tracking-[-0.015em]">
+                                Nawab's Desserts</h2>
+                            <div class="h-px flex-1 bg-primary/20"></div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div
+                                class="flex gap-4 p-4 rounded-xl bg-slate-100 dark:bg-primary/5 border border-slate-200 dark:border-primary/10">
+                                <div class="size-24 shrink-0 rounded-lg bg-center bg-cover"
+                                    data-alt="Traditional Gulab Jamun with syrup"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-1Nb7zExRacf0jTn_vp_9jZbBMwSzU2dNL5_YXKjWuYreW-lNDQTkIKR6p3rqI77ySB1fp0HuwqA8SlrY199lEyPyfUYh3zoQ3Su6F3SudPhdwoWeOEI4wKXPPGKUh9cqn8EBwI5dcCL0k4I-Ri4sL1HGxLKPjdXXDod_jmkaYyijZ3MsiY0kzL3Khf7ndz6425q7_l9KpK20sM2AMIPc19hYuz7x6_3MvXUmwh4t2bSIe_76wHCTHbq9MxQlpTnu9pNiiBF63g");'>
+                                </div>
+                                <div class="flex flex-col justify-between flex-1">
+                                    <div>
+                                        <h3 class="font-bold text-slate-900 dark:text-slate-100">Shahi Tukda</h3>
+                                        <p class="text-xs text-slate-600 dark:text-slate-400 line-clamp-2">Golden fried
+                                            bread soaked in saffron-infused milk and topped with silver leaf.</p>
+                                    </div>
+                                    <div class="flex justify-between items-center mt-2">
+                                        <span class="text-primary font-bold">₹180</span>
+                                        <button
+                                            class="rounded-full size-8 flex items-center justify-center bg-primary text-white"><span
+                                                class="material-symbols-outlined text-lg">add</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex gap-4 p-4 rounded-xl bg-slate-100 dark:bg-primary/5 border border-slate-200 dark:border-primary/10">
+                                <div class="size-24 shrink-0 rounded-lg bg-center bg-cover"
+                                    data-alt="Cold creamy Rabri in a clay pot"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDn6ZDvWWUBkeD4m00EWwxxXdm-yiC3-34BuJF6HCXbH-FqM2loCcokpIFjbNeRGUyosXfPZR1BQSAJ8nOB4mk_yB9ApUywQj_oK5Tdya9XIhjORa4G9tf_-x7EDt-pP1kkpcMFtOI79buGxZMBxt0qICAaISFTE_7fg-UUnU0_QGIxIAXtK2-LNFTLNHos-Qe4xIDLFn_xoeFHbtxFD2O77O9SXM_PiU_jTW4T3Pf65XGX7Kt73WIbBTJCvKJyolQXsnBqmt9dyg");'>
+                                </div>
+                                <div class="flex flex-col justify-between flex-1">
+                                    <div>
+                                        <h3 class="font-bold text-slate-900 dark:text-slate-100">Zafrani Phirni</h3>
+                                        <p class="text-xs text-slate-600 dark:text-slate-400 line-clamp-2">Creamy rice
+                                            pudding chilled in earthen pots, infused with premium saffron.</p>
+                                    </div>
+                                    <div class="flex justify-between items-center mt-2">
+                                        <span class="text-primary font-bold">₹150</span>
+                                        <button
+                                            class="rounded-full size-8 flex items-center justify-center bg-primary text-white"><span
+                                                class="material-symbols-outlined text-lg">add</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Drinks Section -->
+                    <section id="drinks">
+                        <div class="flex items-center gap-3 mb-6">
+                            <h2
+                                class="text-slate-900 dark:text-slate-100 text-[28px] font-bold leading-tight tracking-[-0.015em]">
+                                Refreshing Drinks</h2>
+                            <div class="h-px flex-1 bg-primary/20"></div>
+                        </div>
+                        <div class="flex flex-wrap gap-4">
+                            <div
+                                class="flex-1 min-w-[200px] p-4 rounded-xl bg-slate-100 dark:bg-primary/5 border border-slate-200 dark:border-primary/10 text-center">
+                                <div
+                                    class="size-16 mx-auto mb-3 flex items-center justify-center rounded-full bg-primary/20 text-primary">
+                                    <span class="material-symbols-outlined text-3xl">local_cafe</span>
+                                </div>
+                                <h3 class="font-bold mb-1">Masala Lassi</h3>
+                                <p class="text-primary font-bold mb-3">₹120</p>
+                                <button
+                                    class="w-full py-2 bg-primary text-white text-xs font-bold rounded-lg uppercase tracking-wider">Add</button>
+                            </div>
+                            <div
+                                class="flex-1 min-w-[200px] p-4 rounded-xl bg-slate-100 dark:bg-primary/5 border border-slate-200 dark:border-primary/10 text-center">
+                                <div
+                                    class="size-16 mx-auto mb-3 flex items-center justify-center rounded-full bg-primary/20 text-primary">
+                                    <span class="material-symbols-outlined text-3xl">liquor</span>
+                                </div>
+                                <h3 class="font-bold mb-1">Rose Sharbat</h3>
+                                <p class="text-primary font-bold mb-3">₹95</p>
+                                <button
+                                    class="w-full py-2 bg-primary text-white text-xs font-bold rounded-lg uppercase tracking-wider">Add</button>
+                            </div>
+                            <div
+                                class="flex-1 min-w-[200px] p-4 rounded-xl bg-slate-100 dark:bg-primary/5 border border-slate-200 dark:border-primary/10 text-center">
+                                <div
+                                    class="size-16 mx-auto mb-3 flex items-center justify-center rounded-full bg-primary/20 text-primary">
+                                    <span class="material-symbols-outlined text-3xl">water_full</span>
+                                </div>
+                                <h3 class="font-bold mb-1">Jaljeera</h3>
+                                <p class="text-primary font-bold mb-3">₹80</p>
+                                <button
+                                    class="w-full py-2 bg-primary text-white text-xs font-bold rounded-lg uppercase tracking-wider">Add</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <!-- Footer -->
+            <footer class="bg-slate-100 dark:bg-primary/5 border-t border-slate-200 dark:border-primary/10 py-10">
+                <div class="max-w-[1200px] mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                    <div>
+                        <h4 class="font-bold text-lg mb-4 text-primary">Biryani Baithak</h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Bringing the authentic taste of royal
+                            kitchens to your table. Experience the blend of tradition and taste.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-4 text-primary">Visit Us</h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">123 Royal Palace Road<br />Hyderabad, TS
+                            500001</p>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Open: 11:00 AM - 11:00 PM</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-4 text-primary">Connect</h4>
+                        <div class="flex justify-center md:justify-start gap-4">
+                            <span
+                                class="material-symbols-outlined cursor-pointer hover:text-primary">social_leaderboard</span>
+                            <span class="material-symbols-outlined cursor-pointer hover:text-primary">share</span>
+                            <span class="material-symbols-outlined cursor-pointer hover:text-primary">call</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center border-t border-slate-200 dark:border-primary/10 pt-4 px-4">
+                    <p class="text-xs text-slate-500">© 2024 Biryani Baithak. All royalty reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
